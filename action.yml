@@ -1,0 +1,29 @@
+name: Check URL Status
+author: gpuliyar@live.com
+description: Github Action to check URL response status code and reachability
+branding:
+  icon: git-pull-request
+  color: blue
+inputs:
+  url:
+    description: URL path to verify.
+    required: true
+  init-delay:
+    description: Initial delay before probing the URL.
+    required: false
+    default: 0
+  retry-count:
+    description: Number of retries permitted. Max allowed retry is 5.
+    required: false
+    default: 0
+  retry-delay:
+    description: Amount of time to wait before retrying the activity.
+    required: false
+    default: 0
+  codes-allowed:
+    description: List of HTTP response codes that are acceptable/allowed. Separate them by ',' (commas).
+    required: false
+    default: 200
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

@@ -1,0 +1,31 @@
+{
+  "name": "check-url-action",
+  "version": "1.0.0",
+  "description": "Github Action to validate and check URL response status and code",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "axios": "^0.25.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gpuliyar/check-url-action.git"
+  },
+  "keywords": [
+    "github",
+    "github-action",
+    "url",
+    "check-url",
+    "ci"
+  ],
+  "author": "gpuliyar@live.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gpuliyar/check-url-action/issues"
+  },
+  "homepage": "https://github.com/gpuliyar/check-url-action#readme"
+}
